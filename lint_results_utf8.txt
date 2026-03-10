@@ -1,0 +1,48 @@
+
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\components\ui\badge.tsx
+  Line 29: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\components\ui\button.tsx
+  Line 50: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\components\ui\command.tsx
+  Line 24: An interface declaring no members is equivalent to its supertype.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\components\ui\form.tsx
+  Line 129: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\components\ui\navigation-menu.tsx
+  Line 111: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\components\ui\sidebar.tsx
+  Line 636: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\components\ui\sonner.tsx
+  Line 27: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\components\ui\textarea.tsx
+  Line 5: An interface declaring no members is equivalent to its supertype.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\components\ui\toggle.tsx
+  Line 37: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\contexts\AuthContext.tsx
+  Line 20: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\lib\auth.ts
+  Line 4: Unexpected any. Specify a different type.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\pages\CompanyDashboard.tsx
+  Line 30: Unexpected any. Specify a different type.
+  Line 31: Unexpected any. Specify a different type.
+  Line 40: React Hook useEffect has missing dependencies: 'fetchData' and 'navigate'. Either include them or remove the dependency array.
+  Line 126: Unexpected any. Specify a different type.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\pages\Dashboard.tsx
+  Line 29: Unexpected any. Specify a different type.
+  Line 30: Unexpected any. Specify a different type.
+  Line 31: Unexpected any. Specify a different type.
+  Line 32: Unexpected any. Specify a different type.
+  Line 48: React Hook useEffect has missing dependencies: 'fetchDashboardData' and 'navigate'. Either include them or remove the dependency array.
+  Line 85: Unexpected any. Specify a different type.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\pages\HustlePortal.tsx
+  Line 32: Unexpected any. Specify a different type.
+  Line 33: Unexpected any. Specify a different type.
+  Line 34: Unexpected any. Specify a different type.
+  Line 45: React Hook useEffect has a missing dependency: 'fetchHustleData'. Either include it or remove the dependency array.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\src\pages\Messages.tsx
+  Line 56: React Hook useEffect has a missing dependency: 'fetchConversations'. Either include it or remove the dependency array.
+  Line 63: React Hook useEffect has a missing dependency: 'fetchMessages'. Either include it or remove the dependency array.
+  Line 97: Unexpected any. Specify a different type.
+  Line 125: Unexpected any. Specify a different type.
+  Line 154: Unexpected any. Specify a different type.
+FILE: C:\Users\tinev\Documents\Coding Projects\improved_afrihustle\tailwind.config.ts
+  Line 90: A `require()` style import is forbidden.
