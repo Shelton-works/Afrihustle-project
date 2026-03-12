@@ -60,11 +60,23 @@ const ResumeStudio = () => {
     });
   };
 
+  const removeEducation = (index: number) => {
+    const newEdu = [...resumeData.education];
+    newEdu.splice(index, 1);
+    setResumeData({ ...resumeData, education: newEdu });
+  };
+
   const addExperience = () => {
     setResumeData({
       ...resumeData,
       experience: [...resumeData.experience, { company: "", role: "", duration: "", description: "" }],
     });
+  };
+
+  const removeExperience = (index: number) => {
+    const newExp = [...resumeData.experience];
+    newExp.splice(index, 1);
+    setResumeData({ ...resumeData, experience: newExp });
   };
 
   const addSkill = () => {
@@ -244,42 +256,54 @@ const ResumeStudio = () => {
                       </Button>
                     </div>
                     {resumeData.education.map((edu, i) => (
-                      <div key={i} className="grid md:grid-cols-3 gap-4 mb-4 p-4 border border-border rounded-lg">
-                        <div>
-                          <Label>School/University</Label>
-                          <Input
-                            value={edu.school}
-                            onChange={(e) => {
-                              const newEdu = [...resumeData.education];
-                              newEdu[i].school = e.target.value;
-                              setResumeData({ ...resumeData, education: newEdu });
-                            }}
-                            placeholder="University of Lagos"
-                          />
-                        </div>
-                        <div>
-                          <Label>Degree/Field</Label>
-                          <Input
-                            value={edu.degree}
-                            onChange={(e) => {
-                              const newEdu = [...resumeData.education];
-                              newEdu[i].degree = e.target.value;
-                              setResumeData({ ...resumeData, education: newEdu });
-                            }}
-                            placeholder="Computer Science"
-                          />
-                        </div>
-                        <div>
-                          <Label>Year</Label>
-                          <Input
-                            value={edu.year}
-                            onChange={(e) => {
-                              const newEdu = [...resumeData.education];
-                              newEdu[i].year = e.target.value;
-                              setResumeData({ ...resumeData, education: newEdu });
-                            }}
-                            placeholder="2020-2024"
-                          />
+                      <div key={i} className="mb-4 p-4 border border-border rounded-lg relative">
+                        {resumeData.education.length > 1 && (
+                          <Button
+                            variant="destructive"
+                            size="icon"
+                            className="absolute -top-2 -right-2 h-7 w-7 rounded-full"
+                            onClick={() => removeEducation(i)}
+                          >
+                            <Trash2 className="h-4 w-4" />
+                          </Button>
+                        )}
+                        <div className="grid md:grid-cols-3 gap-4">
+                          <div>
+                            <Label>School/University</Label>
+                            <Input
+                              value={edu.school}
+                              onChange={(e) => {
+                                const newEdu = [...resumeData.education];
+                                newEdu[i].school = e.target.value;
+                                setResumeData({ ...resumeData, education: newEdu });
+                              }}
+                              placeholder="University of Lagos"
+                            />
+                          </div>
+                          <div>
+                            <Label>Degree/Field</Label>
+                            <Input
+                              value={edu.degree}
+                              onChange={(e) => {
+                                const newEdu = [...resumeData.education];
+                                newEdu[i].degree = e.target.value;
+                                setResumeData({ ...resumeData, education: newEdu });
+                              }}
+                              placeholder="Computer Science"
+                            />
+                          </div>
+                          <div>
+                            <Label>Year</Label>
+                            <Input
+                              value={edu.year}
+                              onChange={(e) => {
+                                const newEdu = [...resumeData.education];
+                                newEdu[i].year = e.target.value;
+                                setResumeData({ ...resumeData, education: newEdu });
+                              }}
+                              placeholder="2020-2024"
+                            />
+                          </div>
                         </div>
                       </div>
                     ))}
@@ -295,7 +319,17 @@ const ResumeStudio = () => {
                       </Button>
                     </div>
                     {resumeData.experience.map((exp, i) => (
-                      <div key={i} className="space-y-4 mb-4 p-4 border border-border rounded-lg">
+                      <div key={i} className="space-y-4 mb-4 p-4 border border-border rounded-lg relative">
+                        {resumeData.experience.length > 1 && (
+                          <Button
+                            variant="destructive"
+                            size="icon"
+                            className="absolute -top-2 -right-2 h-7 w-7 rounded-full"
+                            onClick={() => removeExperience(i)}
+                          >
+                            <Trash2 className="h-4 w-4" />
+                          </Button>
+                        )}
                         <div className="grid md:grid-cols-3 gap-4">
                           <div>
                             <Label>Company</Label>

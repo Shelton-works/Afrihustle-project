@@ -306,7 +306,7 @@ const CompanyDashboard = () => {
                                 Accept
                               </Button>
                               <Button
-                                variant="outline"
+                                variant="destructive"
                                 onClick={() => updateApplicationStatus(app.id, "rejected")}
                               >
                                 <XCircle className="h-4 w-4 mr-2" />
@@ -367,7 +367,7 @@ const CompanyDashboard = () => {
                         </div>
                         <div className="flex gap-2">
                           <Button variant="outline" size="sm">Edit</Button>
-                          <Button variant="outline" size="sm">Close</Button>
+                          <Button variant="destructive" size="sm">Close</Button>
                         </div>
                       </div>
 
